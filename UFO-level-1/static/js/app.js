@@ -7,3 +7,6 @@ var tbody = d3.select("tbody");
 
 //console.log our data.js
 console.log(data);
+
+// Append one table row `tr` to the table body
+var row = tbody.append("tr");
