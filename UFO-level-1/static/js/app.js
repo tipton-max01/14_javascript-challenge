@@ -31,12 +31,12 @@ data.forEach(function(ufo) {
 // Select the button
 var button = d3.select("#filter-btn");
 
-// Getting a reference to the input element on the page
-
+//select form
+var form = d3.select("#form");
 
 // Create event handlers 
 button.on("click", handleClick);
-inputField.on("submit", handleClick);
+form.on("submit", handleClick);
 
 // This function is triggered when the button is clicked
 function handleClick() {
