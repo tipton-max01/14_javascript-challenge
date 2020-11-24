@@ -17,7 +17,8 @@ data.forEach(function(ufo) {
 // Step 3:  Use `Object.entries` to console.log each ufo value:
   Object.entries(ufo).forEach(function([key, value]) {
     console.log(key, value);
+// Step 4: Use d3 to append 1 cell per ufo value (date/time, city, state, country, shape, duration, & comment)
+// Append a cell to the row for each value in the ufo object
+    var cell = row.append("td");
   });
-// Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
-
 });
