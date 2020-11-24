@@ -25,3 +25,9 @@ data.forEach(function(ufo) {
     cell.text(value);
   });
 });
+
+//Create event listener
+
+// Select the button
+var button = d3.select("#filter-btn");
+
