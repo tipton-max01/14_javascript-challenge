@@ -38,23 +38,22 @@ var inputField = d3.select("#datetime");
 button.on("click", handleClick);
 inputField.on("submit", handleClick);
 
-
 // This function is triggered when the button is clicked
 function handleClick() {
-  console.log("A button was clicked!");
 
-  // We can use d3 to see the object that dispatched the event
-  console.log(d3.event.target);
-}
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
 
-// Prevent the page from refreshing
-d3.event.preventDefault();
+//   // We can use d3 to see the object that dispatched the event
+//   console.log(d3.event.target);
+// }
 
-// We can use the `on` function in d3 to attach an event to the handler function
-button.on("click", handleClick);
+// // We can use the `on` function in d3 to attach an event to the handler function
+// button.on("click", handleClick);
 
-// Input fields can trigger a change event when new text is entered.
-inputField.on("change", function() {
-  var newText = d3.event.target.value;
-  console.log(newText);
-});
+// // Input fields can trigger a change event when new text is entered.
+// inputField.on("change", function() {
+//   var newText = d3.event.target.value;
+//   console.log(newText);
+// });
+};
