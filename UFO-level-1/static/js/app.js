@@ -32,7 +32,7 @@ data.forEach(function(ufo) {
 var button = d3.select("#filter-btn");
 
 // Getting a reference to the input element on the page
-var inputField = d3.select("#datetime");
+
 
 // Create event handlers 
 button.on("click", handleClick);
@@ -44,16 +44,6 @@ function handleClick() {
   // Prevent the page from refreshing
   d3.event.preventDefault();
 
-//   // We can use d3 to see the object that dispatched the event
-//   console.log(d3.event.target);
-// }
-
-// // We can use the `on` function in d3 to attach an event to the handler function
-// button.on("click", handleClick);
-
-// // Input fields can trigger a change event when new text is entered.
-// inputField.on("change", function() {
-//   var newText = d3.event.target.value;
-//   console.log(newText);
-// });
+  // Select the input element and get the raw HTML node
+  var inputElement = d3.select("#datetime");
 };
