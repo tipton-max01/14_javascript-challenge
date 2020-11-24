@@ -26,8 +26,10 @@ data.forEach(function(ufo) {
   });
 });
 
-//Create event listener
 
+//Create event listener
 // Select the button
 var button = d3.select("#filter-btn");
 
+// Getting a reference to the input element on the page
+var inputField = d3.select("#datetime");
