@@ -34,6 +34,11 @@ var button = d3.select("#filter-btn");
 // Getting a reference to the input element on the page
 var inputField = d3.select("#datetime");
 
+// Create event handlers 
+button.on("click", handleClick);
+inputField.on("submit", handleClick);
+
+
 // This function is triggered when the button is clicked
 function handleClick() {
   console.log("A button was clicked!");
