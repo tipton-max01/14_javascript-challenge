@@ -49,4 +49,18 @@ function handleClick() {
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
+
+  console.log(inputValue);
+  console.log(tableData);
+
+  var filteredData = tableData.filter(alien => alien.datetime === inputValue);
+  console.log(filteredData);
+
+//   // Input fields can trigger a change event when new text is entered.
+//   inputField.on("change", function() {
+//   var newText = d3.event.target.value;
+//   console.log(newText);
+// });
+
+
 };
