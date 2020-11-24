@@ -20,5 +20,8 @@ data.forEach(function(ufo) {
 // Step 4: Use d3 to append 1 cell per ufo value (date/time, city, state, country, shape, duration, & comment)
 // Append a cell to the row for each value in the ufo object
     var cell = row.append("td");
+// Step 5: Use d3 to update each cell's text with
+// Append a cell to the row for each value
+    cell.text(value);
   });
 });
